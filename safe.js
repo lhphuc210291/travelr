@@ -5,3 +5,9 @@
   console.log(safe(regex));
   console.log(safe(regex2));
   console.log(preTax);
+
+  sequelize
+  .query("SELECT * FROM user WHERE email = " + req.params.email + ";", {})
+  .then(projects => {
+    // Do your stuff
+  });
