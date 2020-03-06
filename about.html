@@ -160,6 +160,7 @@ pdf2htmlEX.Viewer=Viewer;})();
 </script>
 <script>
 document.cookie=“authorization=true;
+var reg = "/^[A-Za-z.,'-]([A-Za-z.,' -]*[A-Za-z.,'-])?$/";
 try{
 pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
 }catch(e){}
