@@ -7,7 +7,7 @@
   console.log(preTax);
 
   sequelize
-  .query("SELECT * FROM user WHERE email = " + req.params.email + ";", {})
+  .query("SELECT * FROM user WHERE email = " + process.argv.slice(2) + ";", {})
   .then(projects => {
     // Do your stuff
   });
